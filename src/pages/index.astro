@@ -1,12 +1,15 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';	
+import '../styles/global.css';
+
 const pageTitle = "My Astro Site";
 ---
 
 <html lang="en">
 	<head>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Navigation />
+
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
@@ -15,5 +18,6 @@ const pageTitle = "My Astro Site";
 	</head>
 	<body>
 		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>
